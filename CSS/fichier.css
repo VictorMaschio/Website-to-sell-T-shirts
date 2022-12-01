@@ -1,0 +1,610 @@
+div,
+nav,
+body,
+header,
+footer,
+ul,
+li,
+a {
+    margin: 0em;
+    padding: 0em;
+    text-decoration: none;
+}
+
+
+/* Barre de navigation*/
+
+nav {
+    background-color: rgb(35, 37, 37);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 4;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1em;
+}
+
+nav img {
+    padding: 0.5em;
+    width: 1.5em;
+    height: 2em;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+}
+
+nav a div.logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+nav a div.logo img {
+    height: 1.2em;
+    padding: 0em;
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+nav a.active {
+    pointer-events: none;
+    color: rgb(27, 207, 7);
+}
+
+
+/* Footer */
+
+footer {
+    padding: 1em;
+    background-color: rgb(35, 37, 37);
+    overflow: auto;
+}
+
+footer ul li.contact {
+    text-align: center;
+    display: block;
+}
+
+footer ul li.autre {
+    display: block;
+    padding: 0.5em;
+}
+
+footer ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Page de découverte*/
+
+.section1 {
+    text-align: center;
+    background-image: url("../Images/background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.section2 {
+    text-align: center;
+    background-image: url("../Images/background2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.textR {
+    margin-top: 15vh;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 55vw;
+    right: 3vw;
+}
+
+
+/*        Page du Panier             */
+/* récapitulatif des commandes */
+.recap {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(35, 37, 37);
+    margin: 4vw 8vw;
+    padding: 1vw;
+    height: 72vh;
+    border: none;
+    border-radius: 0.4em;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.recap div.produit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1vw 4vw;
+    padding: 1vw;
+    width: 70vw;
+    background-color: rgb(27, 207, 7);
+    border: none;
+    border-radius: 0.4em;
+}
+
+.recap div.produit canvas {
+    height: 10vh;
+    width: 5vw;
+}
+
+
+.recap div.produit button {
+    border-radius: 0.4em;
+    border: 2px solid rgb(27, 207, 7);
+    background-color: rgb(35, 37, 37);
+    color: rgb(27, 207, 7);
+    padding: 0.5em 2em;
+}
+
+.recap div.produit button:hover {
+    border: 2px solid rgb(35, 37, 37);
+    background-color: rgb(27, 207, 7);
+    color: rgb(35, 37, 37);
+    transition: .3s ease;
+}
+
+.recap p {
+    color: rgb(27, 207, 7);
+    text-align: center;
+}
+
+.recap div.valider {
+    display: flex;
+    justify-content: space-around;
+}
+
+.recap div.valider button {
+    background-color: rgb(35, 37, 37);
+    color: rgb(27, 207, 7);
+    border: 2px solid rgb(27, 207, 7);
+    border-radius: 0.4em;
+    width: 15vw;
+    margin: 3vh 0vw;
+    padding: 0.5em;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Formulaire */
+
+.formulaire {
+    margin: 4vw 8vw;
+    padding: 1vw;
+    background-color: rgb(27, 207, 7);
+    color: rgb(35, 37, 37);
+    border: none;
+    border-radius: 0.4em;
+    display: none;
+}
+
+.misenform {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 20px;
+    margin-left: 1em;
+}
+
+input[type=text],
+input[type=date] {
+    padding: 1em;
+    margin: 1em;
+    border: none;
+    border-radius: 0.4em;
+}
+
+textarea {
+    padding: 1em;
+    margin: 1em;
+    border: none;
+    border-radius: 0.4em;
+    height: 200px;
+}
+
+input[type=submit],
+input[type=reset] {
+    padding: 1em 7em;
+    margin: 1vh 10vw;
+    border: none;
+    border-radius: 0.4em;
+    background-color: rgb(35, 37, 37);
+    color: rgb(27, 207, 7);
+    cursor: pointer;
+}
+
+/* Condition de remboursement */
+
+.Titre {
+    padding: 1em;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 5vw;
+    padding: 1em;
+}
+
+ol li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 5vw;
+    padding: 1em;
+}
+
+
+/* Bouton de scroll*/
+
+#scrlbutton {
+    z-index: 99;
+    display: none;
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    padding: 1em;
+    border: none;
+    border-radius: 0.4em;
+    border: 2px solid rgb(27, 207, 7);
+    background-color: rgb(27, 207, 7);
+    color: rgb(35, 37, 37);
+}
+
+#scrlbutton:hover {
+    color: rgb(27, 207, 7);
+    background-color: rgb(35, 37, 37);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+
+/* Page de Présentation des Produits*/
+
+h1.prod {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.prod {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.miseenpageproduit {
+    display: flex;
+    flex-direction: row;
+}
+
+.filtres {
+    top: 0vh;
+    left: 0vw;
+    width: 10vw;
+    height: 100vh;
+    padding: 1vw;
+    background-color: rgb(35, 37, 37);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    position: sticky;
+}
+
+
+div.filtres a {
+    text-align: center;
+    color: rgb(27, 207, 7);
+    padding: 1em;
+    border: 0vw;
+}
+
+div.filtres div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 0vh;
+    gap: 2vh;
+    justify-content: center;
+}
+
+div.filtres button {
+    border-radius: 0.4em;
+    border: 2px solid rgb(35, 37, 37);
+    background-color: white;
+    color: rgb(35, 37, 37);
+    padding: 1em;
+    transition: .3s ease;
+}
+
+
+div.filtres button:hover {
+    transition: .3s ease;
+    background-color: rgb(27, 207, 7);
+    cursor: pointer;
+}
+
+div.filtres button.active {
+    color: rgb(27, 207, 7);
+    background-color: rgb(35, 37, 37);
+    border: 2px solid rgb(27, 207, 7);
+    transition: .3s ease;
+    pointer-events: none;
+}
+
+
+/*rond filtres*/
+
+div.filtres div div {
+    border: 3px solid rgb(35, 37, 37);
+    border-radius: 50%;
+    height: 3vh;
+    width: 3vh;
+}
+
+div.filtres div div.active {
+    border: 3px solid rgb(27, 207, 7);
+    transition: .3s ease;
+}
+
+div.filtres div#AllColor {
+    background-image: radial-gradient(black, white);
+}
+
+div.filtres div#red {
+    background-color: red;
+}
+
+div.filtres div#blue {
+    background-color: blue;
+}
+
+div.filtres div#black {
+    background-color: black;
+}
+
+div.filtres div#yellow {
+    background-color: yellow;
+}
+
+div.filtres div#purple {
+    background-color: purple;
+}
+
+div.filtres div#green {
+    background-color: green;
+}
+
+div.filtres div#pink {
+    background-color: pink;
+}
+div.filtres div#orange {
+    background-color: orange;
+}
+div.filtres div#white {
+    background-color: white;
+}
+div.filtres div#cyan {
+    background-color: cyan;
+}
+
+/* Début de l'affichage d'un produit */
+
+.boutique {
+    /* Contient les produits affichés*/
+    margin-left: 10vw;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.boutique div.produit {
+    /*Contient l'image, le titre et les couleurs du T-shirt */
+    width: 20vw;
+    padding: 0vw;
+    margin: 2vw;
+    box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, 0.2), 0 1vw 1vw 0 rgba(0, 0, 0, 0.20);
+    text-align: center;
+}
+.boutique div.produit a canvas {
+    width: 100%;
+    opacity: 0.9;
+}
+.boutique div.produit:hover a canvas {
+    transition: .5s ease;
+    opacity: 1;
+}
+
+
+div.personnalisation {
+    opacity: 1;
+    position: relative;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    left: 10vw;
+    bottom: 25vh;
+    display: flex;
+}
+
+div.personnalisation div {
+    /*défini les ronds*/
+    opacity: 0.7;
+    border-radius: 50%;
+    height: 1.1vw;
+    width: 1.1vw;
+    background-color: rgb(128, 128, 128);
+    margin: 1vw;
+}
+div.personnalisation div:hover {
+    opacity: 1;
+    transition: .3s ease;
+}
+
+
+/*  Fin de l'affichage des produits */
+
+
+/* Affichage de la personnalisation*/
+
+main.MainPersonnalisation {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 10vh;
+    font-size: 1vw;
+}
+
+aside.sidebar {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(35, 37, 37);
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+aside.sidebar a canvas {
+    margin: 5vh 0vw;
+    padding: 2vh 6vh;
+    border-radius: 40%;
+    width: 15vh;
+}
+
+aside.sidebar a.active {
+    background-color: rgb(27, 207, 7);
+    transition: .5s ease;
+    pointer-events: none;
+}
+
+.ImageProduit {
+    width: 60vh;
+    margin: 0vh 3vw;
+}
+
+main.MainPersonnalisation section p {
+    display: flex;
+    justify-content: start;
+    margin: 3vh 0vw;
+}
+
+div.Description {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+div.Description div.Tailles button {
+    /*Affichage d'un button de taille*/
+    border-radius: 0.4em;
+    border: 2px solid rgb(27, 207, 7);
+    background-color: rgb(35, 37, 37);
+    color: rgb(27, 207, 7);
+    margin: 3vh 2vw;
+    width: 10vw;
+    height: 7vh;
+    font-size: 2vw;
+}
+
+div.Description div.Tailles button.active {
+    border: 2px solid rgb(35, 37, 37);
+    background-color: rgb(27, 207, 7);
+    color: rgb(35, 37, 37);
+    transition: .5s ease;
+}
+
+div.Description div.Quantite {
+    /*Conteuneur des button de Quantité*/
+    display: flex;
+    justify-content: space-between;
+    margin: 0vh 2vw;
+}
+
+div.Quantite button {
+    border-radius: 0.4em;
+    border: 2px solid rgb(27, 207, 7);
+    background-color: rgb(35, 37, 37);
+    color: rgb(27, 207, 7);
+    padding: 0.5em 2em;
+}
+
+div.Quantite button:hover {
+    border: 2px solid rgb(35, 37, 37);
+    background-color: rgb(27, 207, 7);
+    color: rgb(35, 37, 37);
+    transition: .3s ease;
+}
+
+div.Quantite div.number {
+    padding: 0.5em 8em;
+}
+
+div.ajout {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.ajout a.AjoutPanier {
+    border: 2px solid rgb(27, 207, 7);
+    background-color: rgb(35, 37, 37);
+    color: rgb(27, 207, 7);
+    border-radius: 0.4em;
+    width: 15vw;
+    margin: 3vh 0vw;
+    padding: 0.5em;
+    text-align: center;
+}
+
+div.ajout a.AjoutPanier:hover {
+    border: 2px solid rgb(35, 37, 37);
+    background-color: rgb(27, 207, 7);
+    color: rgb(35, 37, 37);
+    transition: .3s ease;
+}
+
+.InfoProduit {
+    margin: 3vh 2vw;
+    padding: 0vw;
+    text-align: start;
+}
+
+.InfoProduit p {
+    margin-left: 0vw;
+    font-size: 1vw;
+}

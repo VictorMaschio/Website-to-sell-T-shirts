@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="shortcut icon" href="Logo.png">
+    <meta charset="utf-8">
+    <title>Panier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/fichier.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header></header>
+    <div class="recap">
+        <template id="Template">
+            <div class="produit">
+                <canvas></canvas>
+                <div class="Nom">Nom</div>
+                <div class="Tailles">Tailles</div>
+                <div class="Quantite">Quantité</div>
+                <div class="Prix">Prix</div>
+                <button>Supprimer</button>
+            </div>
+        </template>
+    </div>
+    <div class="formulaire">
+        <form method="get">
+            <div class="misenform">
+                <label>Prénom*</label>
+                <input type="text" placeholder="Entrez votre prénom" required>
+                <label>Nom*</label>
+                <input type="text" placeholder="Entrez votre Nom" required>
+            </div>
+            <label>Adresse email*</label>
+            <input type="text" placeholder="Entrez votre email" required>
+            <label>Numéro de téléphone*</label>
+            <input type="text" pattern="[0-9]{10}" placeholder="Entrez votre numéro de téléphone" inputmode="tel"
+                required>
+            <label>Addresse*</label>
+            <input type="text" id="Adresse" name="Addresse" placeholder="12 rue Victor Hugo" required>
+            <div class="misenform">
+                <label>Ville*</label>
+                <input type="text" name="Ville" placeholder="Lyon" required>
+                <label f>Zip*</label>
+                <input type="text" name="Zip" placeholder="69003" required>
+                <label>Pays*</label>
+                <input type="text" name="Pays" placeholder="France" required>
+                <label>Date de livraison*</label>
+                <input type="datetime-local" name="Date" min="2021-11-16" id="date" required>
+            </div>
+            <label>Subject</label>
+            <textarea placeholder="écrivez quelquechose.."></textarea>
+            <div>Les Champs suivis d'un * sont à remplir obligatoirement.</div>
+            <div class="misenform">
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="réinitialiser">
+            </div>
+        </form>
+    </div>
+    <footer></footer>
+    <script src="../JavaScript/JavaScript.js"></script>
+</body>
+
+</html>

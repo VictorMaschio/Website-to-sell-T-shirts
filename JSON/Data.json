@@ -1,0 +1,121 @@
+[
+    {
+        "id": "0",
+        "img": "../Images/Nebuleuse.jpg",
+        "nom": "Nébuleuse",
+        "colors": [
+            "red",
+            "black",
+            "blue"
+            
+        ],
+        "prix": "19.50",
+        "tags": [
+            "Spatiale",
+            "Nature"
+        ]
+    },
+    {
+        "id": "1",
+        "img": "../Images/ChritmasDay.png",
+        "nom": "Papa santa",
+        "colors": [
+            "green",
+            "black",
+            "blue",
+            "yellow"
+        ],
+        "prix": "15.99",
+        "tags": [
+            "Dessin"
+        ]
+    },
+    {
+        "id": "2",
+        "img": "../Images/Kraken.png",
+        "nom": "Kraken",
+        "colors": [
+            "yellow",
+            "blue",
+            "pink",
+            "red",
+            "green"
+            
+        ],
+        "prix": "16.50",
+        "tags": [
+            "Dessin"
+        ]
+    },
+    {
+        "id": "3",
+        "img": "../Images/Motors.png",
+        "nom": "Moto",
+        "colors": [
+            "purple",
+            "black",
+            "red",
+            "white"
+        ],
+        "prix": "13.99",
+        "tags": [
+            "Dessin"
+        ]
+    },
+    {
+        "id": "4",
+        "img": "../Images/Loup.jpg",
+        "nom": "Le Loup",
+        "colors": [
+            "orange",
+            "pink",
+            "red"
+        ],
+        "prix": "16.99",
+        "tags": [
+            "Nature","Animaux"
+        ]
+    },
+    {
+        "id": "5",
+        "img": "../Images/Chat.jpg",
+        "nom": "Le Chat",
+        "colors": [
+            "black",
+            "blue",
+            "orange",
+            "purple"
+        ],
+        "prix": "18.99",
+        "tags": [
+            "Animaux"
+        ]
+    },
+    {
+        "id": "6",
+        "img": "../Images/Ecureuil.jpg",
+        "nom": "Ecureuil",
+        "colors": [
+            "white",
+            "cyan",
+            "pink"
+        ],
+        "prix": "17.50",
+        "tags": [
+            "Animaux"
+        ]
+    },{
+        "id": "7",
+        "img": "../Images/crawl.png",
+        "nom": "Craby",
+        "colors": [
+            "cyan",
+            "orange",
+            "red"
+        ],
+        "prix": "17.99",
+        "tags": [
+            "Animaux","Dessin"
+        ]
+    }
+]
